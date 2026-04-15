@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahrzeugvermietung</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="overlay" class="hidden">
+    <div id="modal">
+        <div id="modal-header">
+            <h1 id="shop-title">Fahrzeugvermietung</h1>
+            <button id="closeBtn" onclick="closeUI()">✕</button>
+        </div>
+        <div id="modal-body">
+            <div id="vehicle-list"></div>
+            <div id="slider-panel" class="hidden">
+                <div id="slider-header">
+                    <span class="slider-label">Mietdauer</span>
+                    <span id="durationBadge">10 min</span>
+                    <span id="totalPrice">0 €</span>
+                </div>
+                <input type="range" id="durationSlider" min="10" max="120" step="10" value="10" />
+                <div class="slider-limits">
+                    <span id="sliderMin">10 min</span>
+                    <span id="sliderMax">120 min</span>
+                </div>
+                <button id="confirmRentBtn">✓ Miete bestätigen</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
